@@ -1,0 +1,30 @@
+data;
+
+set NUTR := Sod Ene Prot VitD Calc Iron Pota ;
+set FOOD := BEEF CABB EGG MUSH RAME SMEN ;
+
+param:   cost  f_min  f_max :=
+  BEEF     1    0     100
+  CABB   0.4    0     100
+  EGG    0.3    0     100
+  MUSH   0.8    0     100
+  RAME     1    0     100
+  SMEN     1    0     100 ;
+
+param:   n_min  n_max :=
+   Sod     10  5000
+   Ene   2000  2100
+   Prot    50   100
+   VitD    20   100
+   Calc  1300  2000
+   Iron    18    30
+   Pota  4700  5000;
+
+param Amt :
+         Sod   Ene   Prot  VitD   Calc   Iron  Pota :=
+   BEEF   72   250    26      7     18   2.6    318
+   CABB   11    12   1.1      0     29   0.7     87
+   EGG    85    86   7.8   49.2   33.6     1   85.2
+   MUSH    3    36   2.7      5      0   1.2    359
+   RAME  4.7   500   9.8      0     30     0      0
+   SMEN  6.2   343  13.4      0      0     0      0 ;
